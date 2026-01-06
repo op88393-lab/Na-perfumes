@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NA PERFUMES | HEERI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #D4AF37; --black: #080808; --gray: #1a1a1a; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--black); color: white; font-family: 'Montserrat', sans-serif; line-height: 1.6; }
+        
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 40px 8%; position: fixed; width: 100%; z-index: 1000; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); }
+        .logo { font-family: 'Cormorant Garamond', serif; font-size: 35px; letter-spacing: 12px; color: var(--gold); font-weight: 600; }
+        .nav-links a { color: #fff; text-decoration: none; margin-left: 40px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; transition: 0.3s; opacity: 0.6; }
+        .nav-links a:hover { opacity: 1; color: var(--gold); }
+
+        /* Hero Section */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 0 10%; background: radial-gradient(circle at 70%, #151515 0%, #080808 100%); }
+        .hero-text { max-width: 500px; animation: fadeInUp 1.5s ease; }
+        .hero-text span { color: var(--gold); font-size: 12px; letter-spacing: 8px; text-transform: uppercase; }
+        .hero-text h1 { font-family: 'Cormorant Garamond', serif; font-size: 110px; font-weight: 300; line-height: 1; margin: 20px 0; }
+        .hero-text p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: #888; margin-bottom: 40px; }
+
+        .product-img { flex: 1; display: flex; justify-content: center; position: relative; }
+        .product-img img { height: 75vh; filter: drop-shadow(0 0 100px rgba(212, 175, 55, 0.1)); transition: 0.6s; }
+        .product-img img:hover { transform: scale(1.05); }
+
+        /* Scent Notes Section */
+        .scent-story { padding: 100px 10%; background: #0c0c0c; text-align: center; border-top: 1px solid #1a1a1a; }
+        .scent-story h2 { font-family: 'Cormorant Garamond', serif; font-size: 50px; color: var(--gold); margin-bottom: 60px; letter-spacing: 5px; }
+        .notes-container { display: flex; justify-content: space-around; gap: 30px; }
+        .note-box { flex: 1; border: 1px solid #222; padding: 50px 20px; transition: 0.5s; }
+        .note-box:hover { border-color: var(--gold); background: #111; }
+        .note-box h3 { color: var(--gold); letter-spacing: 4px; margin-bottom: 15px; font-size: 14px; }
+        .note-box p { font-size: 13px; color: #777; font-family: 'Cormorant Garamond', serif; font-size: 20px; }
+
+        /* CTA Button */
+        .btn { padding: 20px 50px; border: 1px solid var(--gold); background: transparent; color: var(--gold); text-transform: uppercase; letter-spacing: 6px; font-size: 12px; cursor: pointer; transition: 0.5s; position: relative; overflow: hidden; }
+        .btn:hover { background: var(--gold); color: black; font-weight: bold; }
+
+        /* Concierge Footer */
+        footer { padding: 80px 10%; border-top: 1px solid #1a1a1a; text-align: center; }
+        .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--gold); letter-spacing: 5px; margin-bottom: 20px; }
+        .copyright { font-size: 10px; color: #444; letter-spacing: 2px; margin-top: 50px; }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NA</div>
+        <div class="nav-links">
+            <a href="#">The Essence</a>
+            <a href="#">Our Heritage</a>
+            <a href="#">Concierge</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <span>The Gold Standard</span>
+            <h1>HEERI</h1>
+            <p>Crafted for the elite. Defined by power.</p>
+            <button class="btn">Inquire for Batch #01</button>
+        </div>
+        <div class="product-img">
+            <img src="heeri.png" alt="Heeri Luxury Bottle">
+        </div>
+    </section>
+
+    <section class="scent-story">
+        <h2>THE SYMPHONY</h2>
+        <div class="notes-container">
+            <div class="note-box">
+                <h3>OVERTURE</h3>
+                <p>Pure Saffron & Crisp Bergamot</p>
+            </div>
+            <div class="note-box">
+                <h3>THE HEART</h3>
+                <p>Bulgarian Rose & Royal Silk</p>
+            </div>
+            <div class="note-box">
+                <h3>THE LEGACY</h3>
+                <p>Aged Sylhet Oud & Black Amber</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">NA PERFUMES</div>
+        <p style="font-size: 12px; color: #888;">BY APPOINTMENT ONLY</p>
+        <p class="copyright">© 2026 NA PERFUMES LUXURY GROUP. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+Heeri.png.
